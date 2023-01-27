@@ -16,11 +16,11 @@
 	<!-- DB 정보를 빈으로 등록해 내 DB 와 연결 -->
 	<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://localhost:3306/testdb?useSSL=false&amp;allowPublicKeyRetireval=true&amp;"></property>
-		<property name="username" value="root"></property>
+		<property name="url" value="jdbc:oracle:thin:@server:1521:db?useSSL=false&amp;allowPublicKeyRetireval=true&amp;"></property>
+		<property name="username" value="system"></property>
 		<property name="password" value="Suk8418!"></property>
 	</bean>
-	
+	x
 	<!-- sqlSessionFactory 빈 등록 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="ds"></property>
